@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SentinelLog | Threat Parser</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 SentinelLog Analysis</h1>
+        <p>Analyze server logs for Brute Force, SQLi, and Unauthorized Access.</p>
+        
+        <textarea id="logInput" placeholder="Paste server logs here... (e.g. 192.168.1.1 - [07/Jan/2026] 'POST /login' 401)"></textarea>
+        
+        <div class="actions">
+            <button onclick="analyzeLogs()" class="btn-scan">Scan for Threats</button>
+            <button onclick="loadSample()" class="btn-sample">Load Sample Logs</button>
+        </div>
+
+        <div class="controls">
+            <label>Filter:
+                <select id="severityFilter">
+                    <option value="All">All</option>
+                    <option value="Critical">Critical</option>
+                    <option value="High">High</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Low">Low</option>
+                </select>
+            </label>
+            <label style="margin-left:10px;"><input type="checkbox" id="dedupe" /> Deduplicate results</label>
+            <button onclick="exportCSV()" class="btn-export">Export CSV</button>
+            <button onclick="clearResults()" class="btn-clear">Clear</button>
+        </div>
+
+        <div id="dashboard">
+            <div class="stat-card">Threats Found: <span id="threatCount">0</span></div>
+            <div id="resultsList"></div>
+        </div>
+    </div>
+    <script src="logscript.js"></script>
+</body>
+</html>

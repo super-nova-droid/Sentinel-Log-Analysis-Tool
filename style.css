@@ -1,0 +1,19 @@
+body { font-family: 'Courier New', monospace; background: #0b0e14; color: #00ff41; display: flex; justify-content: center; padding: 20px; }
+.container { width: 800px; background: #1a1f26; border: 1px solid #00ff41; padding: 25px; border-radius: 5px; box-shadow: 0 0 15px rgba(0, 255, 65, 0.2); }
+textarea { width: 100%; height: 200px; background: #000; color: #00ff41; border: 1px solid #333; padding: 10px; margin-bottom: 15px; resize: none; }
+.actions { margin-bottom: 20px; display: flex; gap: 10px; }
+button { flex: 1; padding: 12px; cursor: pointer; border: none; font-weight: bold; text-transform: uppercase; }
+.btn-scan { background: #00ff41; color: #000; }
+.btn-sample { background: #333; color: #fff; }
+.controls { display:flex; gap:10px; align-items:center; margin-bottom:15px; }
+.controls label { color:#aaffb8; }
+.btn-export { background:#0066ff; color:#fff; }
+.btn-clear { background:#ff4b2b; color:#fff; }
+.badge { display:inline-block; padding:3px 8px; border-radius:12px; font-size:0.8rem; margin-right:6px; }
+.badge-critical { background:#ff4b2b; color:#fff; }
+.badge-high { background:#ff8c42; color:#000; }
+.badge-medium { background:#ffd166; color:#000; }
+.badge-low { background:#8cffb5; color:#000; }
+#dashboard { border-top: 1px solid #333; padding-top: 20px; }
+.threat-item { background: rgba(255, 0, 0, 0.1); border-left: 4px solid #ff4b2b; padding: 10px; margin-bottom: 10px; color: #ff4b2b; font-size: 0.9rem; }
+.stat-card { font-size: 1.2rem; margin-bottom: 15px; font-weight: bold; }
