@@ -1,14 +1,13 @@
-# File-Integrity-Monitor / SentinelLog 🔍
+## SentinelLog 🔍
 
-A small, local web-based log analysis and file-integrity project for detecting common server threats and demonstrating simple incident triage workflows.
+A small, local web-based log analysis project for detecting common server threats and demonstrating simple incident triage workflows.
 
 ---
 
 ## Overview
 
-This repository contains two complementary utilities:
 
-- **File-Integrity-Monitor**: a simple script that monitors a folder for file changes and alerts when hashes change.
+
 - **SentinelLog (web UI)**: a lightweight browser UI that scans pasted server logs for common attack patterns (SQLi, XSS, LFI/RFI, SSRF, command injection, brute force, recon/scanners, and more) and provides quick triage features (severity, dedupe, export).
 
 Files of interest:
@@ -85,10 +84,4 @@ For more run details see `RUNNING.md`.
 
 ---
 
-## Contribution & License
 
-Contributions are welcome — open issues or PRs for bug fixes and enhancements. Add appropriate tests when extending detection logic. The project is provided as-is (no warranty) — include your preferred license file if you want a formal license.
-
----
-
-If you'd like, I can also add a short one-paragraph blurb for the repository description or a "How it works" diagram.
